@@ -68,6 +68,11 @@ class LicenseAssignment(NetBoxModel):
         null=True,
         blank=True,
     )
+    expiry = models.DateTimeField(
+        verbose_name=_('expiry'),
+        null=True,
+        blank=True
+    )
 
     contracts = GenericRelation(
         to='netbox_lifecycle.SupportContractAssignment',
