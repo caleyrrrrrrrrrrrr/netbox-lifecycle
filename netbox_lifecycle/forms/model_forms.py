@@ -145,7 +145,7 @@ class LicenseAssignmentForm(NetBoxModelForm):
 
     class Meta:
         model = LicenseAssignment
-        fields = ('vendor', 'license', 'device', 'quantity')
+        fields = ('vendor', 'license', 'device', 'quantity', 'expiry')
 
 
 class HardwareLifecycleForm(NetBoxModelForm):
