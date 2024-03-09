@@ -69,7 +69,6 @@ class LicenseAssignment(NetBoxModel):
         blank=True,
     )
     expiry = models.DateTimeField(
-        verbose_name=_('expiry'),
         null=True,
         blank=True
     )
