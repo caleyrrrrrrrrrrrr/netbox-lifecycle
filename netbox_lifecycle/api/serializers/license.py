@@ -29,4 +29,4 @@ class LicenseAssignmentSerializer(NetBoxModelSerializer):
 
     class Meta:
         model = LicenseAssignment
-        fields = ('url', 'id', 'display', 'vendor', 'license', 'device')
+        fields = ('url', 'id', 'display', 'vendor', 'license', 'device','custom_fields')
